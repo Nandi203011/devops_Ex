@@ -77,8 +77,9 @@ kubectl apply -f product_catalog_service.yaml
 kubectl apply -f shopping_cart_service.yaml
 ```
 
-![Image load, docker images inside the node, and kubectl apply of all manifests (including the namespace error)]
-(images/10_image_load_and_kubectl_apply.png)
+
+
+![Image load, docker images inside the node, and kubectl apply of all manifests (including the namespace error)](images/10_image_load_and_kubectl_apply.png)
 
 
 ## Verification: cluster and replica distribution
@@ -214,9 +215,8 @@ $body = @{
 Invoke-RestMethod -Uri "http://127.0.0.1:60177/cart" `
   -Method Post -ContentType "application/json" -Body $body
 ```
-![Add an item to the Shopping Cart]
-(images/10_curl_service_catalog.png)
 
+![Add an item to the Shopping Cart](images/10_curl_service_catalog.png)
 
 The response contained the added Laptop item.
 
